@@ -24,6 +24,11 @@ public class NotaAdapter extends RecyclerView.Adapter<NotaAdapter.NotaVH> {
     }
 
 
+    public void addNote(Nota nota){
+        this.dataSet.add(0,nota);
+        notifyItemChanged(0);
+    }
+
     @Override
     public NotaVH onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_nota,parent,false);
@@ -35,7 +40,7 @@ public class NotaAdapter extends RecyclerView.Adapter<NotaAdapter.NotaVH> {
         Nota nota = dataSet.get(position);
         holder.titoloTv.setText(nota.getTitolo());
         holder.creazioneTv.setText("Creazione: " + nota.getDataCreazione());
-        holder.scadenzaTv.setText("Scadenza: " + nota.getDataScadenza());
+        holder.modificaTv.setText("Modifica: " + nota.getUltimaModifica());
 
     }
 
@@ -46,13 +51,13 @@ public class NotaAdapter extends RecyclerView.Adapter<NotaAdapter.NotaVH> {
 
     public class NotaVH extends RecyclerView.ViewHolder{
 
-        TextView titoloTv, creazioneTv, scadenzaTv;
+        TextView titoloTv, creazioneTv, modificaTv;
 
         public NotaVH(View itemView) {
             super(itemView);
             titoloTv = (TextView) itemView.findViewById(R.id.nota_titolo_tv);
             creazioneTv = (TextView) itemView.findViewById(R.id.nota_creazione_tv);
-            scadenzaTv = (TextView) itemView.findViewById(R.id.nota_scadenza_tv);
+            modificaTv = (TextView) itemView.findViewById(R.id.nota_modifica_tv);
         }
     }
 }

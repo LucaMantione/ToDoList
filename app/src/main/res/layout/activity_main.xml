@@ -36,7 +36,7 @@
         android:layout_margin="@dimen/material_component_floating_action_button_margin"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:id="@+id/business_card_add_btn"
+        android:id="@+id/nota_add_btn"
         android:src="@drawable/ic_plus"/>
 
 

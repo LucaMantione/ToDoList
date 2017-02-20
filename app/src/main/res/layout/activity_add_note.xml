@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/material_component_cards_left_and_right_padding">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aggiungi Nota"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="@dimen/material_typography_title"
+        android:padding="@dimen/material_component_dialogs_padding_between_title_and_body_text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:hint="Titolo"
+        android:textSize="@dimen/material_typography_title"
+        android:id="@+id/add_note_titolo"
+        android:padding="@dimen/material_component_button_text_left_and_right_padding"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="200"
+        android:id="@+id/add_note_corpo"
+        android:hint="Scrivi qui la nota..."/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_gravity="end"
+        android:background="@color/colorAccent"
+        android:text="Aggiungi Nota"
+        android:id="@+id/aggiungi_nota"
+        android:padding="@dimen/material_component_button_text_left_and_right_padding"
+        android:textColor="#fff"/>
+
+</LinearLayout>

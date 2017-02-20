@@ -1,5 +1,7 @@
 package com.zeroeur.todolist;
 
+import java.util.Date;
+
 /**
  * Created by Luca on 20/02/2017.
  */
@@ -12,12 +14,12 @@ public class Nota {
     private String corpo;
     private Stato stato;
 
+
     public Nota(){}
 
-    public Nota(String titolo, String dataCreazione, String dataScadenza, String ultimaModifica, String corpo){
+    public Nota(String titolo, String dataCreazione, String ultimaModifica, String corpo){
         this.titolo = titolo;
         this.dataCreazione = dataCreazione;
-        this.dataScadenza = dataScadenza;
         this.ultimaModifica = ultimaModifica;
         this.corpo = corpo;
         stato = Stato.ATTUALE;

@@ -33,8 +33,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:text="Scadenza: 01/01/2001"
-            android:id="@+id/nota_scadenza_tv"/>
+            android:text="Modifica: 01/01/2001"
+            android:id="@+id/nota_modifica_tv"/>
     </LinearLayout>
 
 </LinearLayout>
